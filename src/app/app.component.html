@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-md custom-nav">
+  <div class="container-fluid">
+    <span class="fa fa-bars fa-2x pointer" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-expanded="false" [hidden]="windowWidth >= 768"></span>
+    <span class="navbar-brand">Portfolio</span>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-texts" routerLink="/home"><span class="fa fa-home fa-lg"></span>&nbsp;Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-texts" routerLink="/about"><span class="fa fa-id-badge fa-lg"></span>&nbsp;About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-texts" routerLink="/projects"><span class="fa fa-file-code-o fa-lg"></span>&nbsp;Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

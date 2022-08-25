@@ -1,0 +1,32 @@
+.greeting{
+    font-family: 'lato';
+    letter-spacing: 3px;
+}
+
+#HomePage{
+    margin-top: 50px;
+}
+
+.AboutInfo{
+    margin-left: 10%;
+    font-family: monospace;
+}
+
+.welcome{
+    letter-spacing: 1px;
+    color: rgb(199, 166, 229);
+}
+
+.myName{
+    color: rgb(217, 255, 0);
+}
+
+.introtech{
+    color: darkkhaki;
+}
+
+.pfp{
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+}

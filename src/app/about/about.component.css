@@ -1,0 +1,17 @@
+#AboutPage{
+    margin-top: 50px;
+}
+
+.AboutInfo{
+    margin-left: 10%;
+    font-family: monospace;
+}
+
+.more{
+    letter-spacing: 1px;
+    color: rgb(199, 166, 229);
+}
+
+ul{
+    list-style-type: circle;
+}
