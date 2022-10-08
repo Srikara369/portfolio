@@ -25,14 +25,17 @@ export class ProjectsComponent implements OnInit {
   ];
   projectList: any = [
     {
+      id: 'iciv',
       name: "Infosys Cloud Infrastruture Validation",
       description: "It is a platform that helps conduct Azure cloud readiness and non-functional validation for a cloud platform build using open-source technology and pre-configured templates and custom scripting"
     },
     {
+      id: 'iob',
       name: "Infosys Open Bank API Testing",
       description: "A platform that performs functional testing, load testing and security testing on Open Banking APIs, using open-source software and generates excel and graph reports."
     },
     {
+      id: 'ibt',
       name: "Infosys Blockchain Testing",
       description: "Combination of different POCs, different blockchain technologies are validated for transactions and smart contracts. I have worked on Multichain, Ethereum and Corda as part of this solution"
     }

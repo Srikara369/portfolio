@@ -13,5 +13,10 @@
 }
 
 ul{
-    list-style-type: circle;
+    list-style-type: none;
+    color: rgb(255, 200, 80);
+}
+
+ul .fa-hand-o-right{
+    color: rgb(199, 166, 229);
 }

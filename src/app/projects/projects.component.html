@@ -1,18 +1,32 @@
 <div class="container-fluid" id="projectpage">
-    <div class="row">
-      <div class="col-10 offset-1">
-        <p-carousel [value]="projectList" [responsiveOptions]="responsiveCarousel" [numVisible]="3" [numScroll]="1"
-          [circular]="true">
-          <ng-template let-product pTemplate="item">
-            <div class="card carousel-card pointer"> <!-- pTooltip="Learn more" tooltipPosition="top" -->
-              <div class="card-body">
-                <h6 class="project-name">{{product.name}}</h6>
-                <hr>
-                <div>{{product.description}}</div>
+  <div class="row">
+    <div class="col-10 offset-1">
+      <p-carousel [value]="projectList" [responsiveOptions]="responsiveCarousel" [numVisible]="3" [numScroll]="1"
+        [circular]="true">
+        <ng-template let-product pTemplate="item">
+          <div class="card carousel-card">
+            <!-- pTooltip="Learn more" tooltipPosition="top" -->
+            <div class="card-body">
+              <h6 class="project-name">{{product.name}}</h6>
+              <hr>
+              <div style="color: rgb(255, 200, 80);">{{product.description}}</div>
+              <br>
+              <div *ngIf="product.id === 'iciv'">
+                <h6>
+                  <a href="https://aws.amazon.com/solutions/consulting-offers/infosys-cloud-infrastructure-validation/"
+                    target="_blank">AWS Solutions&nbsp;<span class="fa fa-external-link"></span></a>
+                </h6>
+              </div>
+              <div *ngIf="product.id === 'iciv'">
+                <h6>
+                  <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/infosysltd.infosys_cloud_infrastructure_validation"
+                    target="_blank">Azure Marketplace&nbsp;<span class="fa fa-external-link"></span></a>
+                </h6>
               </div>
             </div>
-          </ng-template>
-        </p-carousel>
-      </div>
+          </div>
+        </ng-template>
+      </p-carousel>
     </div>
   </div>
+</div>

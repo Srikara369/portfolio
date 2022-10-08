@@ -84,7 +84,8 @@ body{
     background-color: rgba(255, 255, 255, 0.147) !important;
     text-align: justify;
     margin: 0 5px 0 5px;
-    min-height: 250px;
+    min-height: 300px;
+    backdrop-filter: blur(3px);
 }
 
 .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
@@ -106,10 +107,6 @@ body{
     color: #df8fef;
     font-family: monospace;
     font-weight: bold;
-}
-
-.card.carousel-card:hover{
-    opacity: 0.7;
 }
 
 @keyframes rotStar {
