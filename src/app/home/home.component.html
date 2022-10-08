@@ -3,17 +3,36 @@
         <div class="col-md-6 offset-md-1">
             <div class="AboutInfo">
                 <h2 class="welcome">Hello&excl;&nbsp;Welcome to my Portfolio</h2>
-                <h2>I am <span class="myName">Srikara B S</span></h2>
+                <h3>I am <span class="myName">Srikara B S</span></h3>
                 <br>
-                <h4 class="introtech"><span class="fa fa-hand-o-right"></span>&nbsp;Web Developer</h4>
-                <h4 class="introtech"><span class="fa fa-hand-o-right"></span>&nbsp;A passionate MEAN full stack developer</h4>
-                <h4 class="introtech"><span class="fa fa-hand-o-right"></span>&nbsp;AZ-900 and AZ-204 certified</h4>
+                <h5 class="introtech"><span class="fa fa-hand-o-right"></span>&nbsp;MEAN stack developer</h5>
+                <h5 class="introtech"><span class="fa fa-hand-o-right"></span>&nbsp;4+ years of experience in web development</h5>
+                <h5 class="introtech"><span class="fa fa-hand-o-right"></span>&nbsp;Worked on Cloud and Blockchain technologies</h5>
+                <h5 class="introtech"><span class="fa fa-hand-o-right"></span>&nbsp;Aim to be pioneer in Web Development</h5>
             </div>
         </div>
         <div class="col-md-4 text-center">
             <div class="some">
                 <img src="assets/images/pfp.jpg" alt="My photo" class="pfp">
             </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-10 offset-1 text-center">
+            <h2 class="welcome">Education</h2>
+            <hr>
+            <p-timeline [value]="educations" align="alternate">
+                <ng-template pTemplate="marker" let-education>
+                    <span class="custom-marker" [style.color]="education.color">
+                        <span [ngClass]="education.icon"></span>
+                    </span>
+                </ng-template>
+                <ng-template pTemplate="content" let-education>
+                    <h4 class="fadeIn">{{education.degree}}</h4>
+                    <h6 class="fadeIn">{{education.data}}&nbsp;-&nbsp;{{education.years}}</h6>
+                </ng-template>
+            </p-timeline>
         </div>
     </div>
 </section>

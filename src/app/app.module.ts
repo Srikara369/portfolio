@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DockModule } from 'primeng/dock';
 import { AboutComponent } from './about/about.component';
+import { CarouselModule } from 'primeng/carousel';
+import { ProjectsComponent } from './projects/projects.component'
+import { TimelineModule } from 'primeng/timeline'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DockModule
+    DockModule,
+    CarouselModule,
+    TimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]

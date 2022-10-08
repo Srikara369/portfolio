@@ -1,0 +1,18 @@
+<div class="container-fluid" id="projectpage">
+    <div class="row">
+      <div class="col-10 offset-1">
+        <p-carousel [value]="projectList" [responsiveOptions]="responsiveCarousel" [numVisible]="3" [numScroll]="1"
+          [circular]="true">
+          <ng-template let-product pTemplate="item">
+            <div class="card carousel-card pointer"> <!-- pTooltip="Learn more" tooltipPosition="top" -->
+              <div class="card-body">
+                <h6 class="project-name">{{product.name}}</h6>
+                <hr>
+                <div>{{product.description}}</div>
+              </div>
+            </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+    </div>
+  </div>

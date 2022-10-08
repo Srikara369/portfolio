@@ -8,7 +8,7 @@
 }
 
 .AboutInfo{
-    margin-left: 10%;
+    /* margin-left: 10%; */
     font-family: monospace;
 }
 
@@ -30,3 +30,4 @@
     border-radius: 50%;
     border: 2px solid white;
 }
+

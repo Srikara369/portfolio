@@ -3,7 +3,7 @@
 body{
     height: 100%;
     /* overflow-y: hidden; */
-    background-image: radial-gradient(ellipse at center,#351b26 0%, #351b30 30%, #090A0F 100%);
+    background-image: radial-gradient(ellipse at center,#341b35 0%, #341b35 30%, #090A0F 100%);
     color: white !important;
     background-attachment: fixed;
 }
@@ -25,7 +25,7 @@ body{
     margin-top: 25%;
     margin-left: 50%;
     background: transparent;
-    animation: rotStar 200s linear infinite, blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite;  /* rotStar 200s linear infinite */
     box-shadow: var(--small-stars);
     z-index: -1;
     color: #ffffff;
@@ -38,7 +38,7 @@ body{
     margin-top: 25%;
     margin-left: 50%;
     background: transparent;
-    animation: rotStar 200s linear infinite, blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite; /* rotStar 200s linear infinite */
     box-shadow: var(--med-stars);
     z-index: -1;
 }
@@ -47,6 +47,7 @@ body{
     background-color: rgb(0, 0, 0, 0.4);
     color: rgb(255, 255, 255);
     min-height: 100px;
+    backdrop-filter: blur(10px);
     /* margin-bottom: 20px; */
 }
 
@@ -77,6 +78,38 @@ body{
 
 .nav-texts:hover{
     color: white;
+}
+
+.card.carousel-card{
+    background-color: rgba(255, 255, 255, 0.147) !important;
+    text-align: justify;
+    margin: 0 5px 0 5px;
+    min-height: 250px;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
+    background-color: #d400ff !important;
+    border-radius: 50%;
+    width: 0.5rem !important;
+    height: 0.5rem;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator button{
+    background-color: #ffffff;
+    border-radius: 50% !important;
+    width: 1rem !important;
+    height: 0.5rem !important;
+}
+
+.project-name{
+    text-align: center;
+    color: #df8fef;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.card.carousel-card:hover{
+    opacity: 0.7;
 }
 
 @keyframes rotStar {
